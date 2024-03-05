@@ -18,17 +18,17 @@ def main():
             "recordings": [
                 {
                     "title": f"robo",
-                    "audio_path": f"/Users/amitroth/PycharmProjects/hebtts_mos/samples/mms_10.wav",
+                    "audio_path": f"samples/mms_10.wav",
                     "name": f"robo1"
                 },
                 {
                     "title": f"mms",
-                    "audio_path": f"/Users/amitroth/PycharmProjects/hebtts_mos/samples/mms_10.wav",
+                    "audio_path": f"/samples/mms_10.wav",
                     "name": f"mms1"
                 },
                 {
                     "title": f"valle",
-                    "audio_path": f"/Users/amitroth/PycharmProjects/hebtts_mos/samples/mms_10.wav",
+                    "audio_path": f"./samples/mms_10.wav",
                     "name": f"words1"
                 },
                 {
