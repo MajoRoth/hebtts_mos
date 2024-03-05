@@ -9,9 +9,26 @@ function doGet(e) {
 	Sheet.getRange(LastRow+1, 2).setValue(params.mail);
 	Sheet.getRange(LastRow+1, 3).setValue(params.formid);
 
-	for (var i = 1; i <= 3; i++) {
-		Sheet.getRange(LastRow+1, 3+i).setValue(params["q" + i.toString()]);
+  // robo
+  for (var i = 1; i <= 5; i++) {
+		Sheet.getRange(LastRow+1, 3+i).setValue(params["robo" + i.toString()]);
 	}
+  // mms
+  for (var i = 1; i <= 5; i++) {
+		Sheet.getRange(LastRow+1, 8+i).setValue(params["mms" + i.toString()]);
+	}
+
+  // valle (words)
+  for (var i = 1; i <= 5; i++) {
+		Sheet.getRange(LastRow+1, 13+i).setValue(params["words" + i.toString()]);
+	}
+
+  // valle (alephbert)
+  for (var i = 1; i <= 5; i++) {
+		Sheet.getRange(LastRow+1, 18+i).setValue(params["alephbert" + i.toString()]);
+	}
+
+
     console.log("done")
 	return ContentService.createTextOutput(params.thank);
 }

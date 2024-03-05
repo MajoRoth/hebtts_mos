@@ -1,27 +1,34 @@
 {% extends "base.html.jinja2" %}
 {% block heading %}
     <h1 class="display-4">מבחן איכות שמע</h1>
-    <p class="lead">רובו-שאול</p>
+    <p class="lead">האוניברסיטה העברית</p>
     <hr class="my-4">
 
     <p>
-        בשאלון הקרוב תתבקשו לדרג את איכות השמע בקטעי דיבור קצרים שעברו עיבוד. ציון איכות השמע יהיה בין 1 (גרוע) ל-5
+        בשאלון הקרוב תתבקשו לדרג את איכות וטבעיות השמע בקטעי דיבור קצרים שיוצרו באופן מלאכותי. ציון איכות השמע יהיה בין
+        1 (גרוע) ל-6
         (מצויין), כאשר:
     <ul>
         <li>ציון 1 - גרוע - אם יש הפרעות מאוד מציקות</li>
         <li>ציון 2 - רע - אם יש הפרעות מציקות</li>
         <li>ציון 3 - בינוני - אם יש הפרעות קצת מציקות</li>
         <li>ציון 4 - טוב - אם יש הפרעות שניתן לשמוע אבל לא מציקות</li>
-        <li>ציון 5 - מצויין - אם לא ניתן לשמוע הפרעות</li>
+        <li>ציון 5 - טוב מאוד - דיבור כמעט טבעי, הפרעות קטנות.</li>
+        <li>ציון 6 - מצויין - דיבור טבעי</li>
     </ul>
     </p>
+    <p>
+        במתן הציון תנסו להתייחס לאיכות הדיבור עצמו, צליל טבעי/רובוטי, קצב ושטף דיבור, והגייה נכונה של מילים בעברית.
+    </p>
+        <p>
+        בכל מקטע תשמעו את כל ההקלטות ולאחר מכן תיתנו ציון לכל הקלטה.
+    </p>
     <p>בבקשה לעשות את המבחן בחדר שקט ועם אוזניות.</p>
-    <p>לאלהשתמש בפיירפוקס כי הוא עושה בעיות... .אם יש קטעים שלא שומעים זה כי הם עדיין לא נטענו. לחכות בסבלנות בבקשה. לא
+    <p>לאלהשתמש בפיירפוקס כי הוא עושה בעיות. .אם יש קטעים שלא שומעים זה כי הם עדיין לא נטענו. לחכות בסבלנות בבקשה. לא
         אמור להיות אף קטע שהוא שקט</p>
-    <p>מבחן איכות השמע אמור להיות קצר: נבקש שתאזינו פעם או פעמיים לכל דוגמא, תדרגו אותה ותמשיכו הלאה בלי לחזור אחורה
-        ולשנות ציון קודם.</p>
-    <p>ציוני הקטעים יעזרו לנו לכתוב מאמר על אלגוריתמים בשפה העברית.</p>
-    <p>תודה רבה על ההשתתפות! רועי ואוריין</p>
+
+
+    <p>תודה רבה על ההשתתפות! עמית</p>
 {% endblock %}
 {% block form_questions %}
     {% for question in questions %}
@@ -41,15 +48,21 @@
                         </p>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="{{ recording.name }}"
-                                   id="{{ recording.name }}_1"
-                                   value="5" required>
-                            <label class="form-check-label" for="{{ recording.name }}_1">5 (מצויין)</label>
+                                   id="{{ recording.name }}_6"
+                                   value="6" required>
+                            <label class="form-check-label" for="{{ recording.name }}_6">6 (מצויין)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="{{ recording.name }}"
-                                   id="{{ recording.name }}_2"
+                                   id="{{ recording.name }}_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="{{ recording.name }}_5">5 (טוב מאוד)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="{{ recording.name }}"
+                                   id="{{ recording.name }}_4"
                                    value="4" required>
-                            <label class="form-check-label" for="{{ recording.name }}_2">4 (טוב)</label>
+                            <label class="form-check-label" for="{{ recording.name }}_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="{{ recording.name }}"
@@ -59,15 +72,15 @@
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="{{ recording.name }}"
-                                   id="{{ recording.name }}_4"
+                                   id="{{ recording.name }}_2"
                                    value="2" required>
-                            <label class="form-check-label" for="{{ recording.name }}_4">2 (רע)</label>
+                            <label class="form-check-label" for="{{ recording.name }}_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="{{ recording.name }}"
-                                   id="{{ recording.name }}_5"
+                                   id="{{ recording.name }}_1"
                                    value="1" required>
-                            <label class="form-check-label" for="{{ recording.name }}_5">1 (גרוע)</label>
+                            <label class="form-check-label" for="{{ recording.name }}_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>

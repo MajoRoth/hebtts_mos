@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>MOS</title>
+    <title>Hebrew TTS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
@@ -20,27 +20,34 @@
         <div class="container">
 
     <h1 class="display-4">מבחן איכות שמע</h1>
-    <p class="lead">רובו-שאול</p>
+    <p class="lead">האוניברסיטה העברית</p>
     <hr class="my-4">
 
     <p>
-        בשאלון הקרוב תתבקשו לדרג את איכות השמע בקטעי דיבור קצרים שעברו עיבוד. ציון איכות השמע יהיה בין 1 (גרוע) ל-5
+        בשאלון הקרוב תתבקשו לדרג את איכות וטבעיות השמע בקטעי דיבור קצרים שיוצרו באופן מלאכותי. ציון איכות השמע יהיה בין
+        1 (גרוע) ל-6
         (מצויין), כאשר:
     <ul>
         <li>ציון 1 - גרוע - אם יש הפרעות מאוד מציקות</li>
         <li>ציון 2 - רע - אם יש הפרעות מציקות</li>
         <li>ציון 3 - בינוני - אם יש הפרעות קצת מציקות</li>
         <li>ציון 4 - טוב - אם יש הפרעות שניתן לשמוע אבל לא מציקות</li>
-        <li>ציון 5 - מצויין - אם לא ניתן לשמוע הפרעות</li>
+        <li>ציון 5 - טוב מאוד - דיבור כמעט טבעי, הפרעות קטנות.</li>
+        <li>ציון 6 - מצויין - דיבור טבעי</li>
     </ul>
     </p>
+    <p>
+        במתן הציון תנסו להתייחס לאיכות הדיבור עצמו, צליל טבעי/רובוטי, קצב ושטף דיבור, והגייה נכונה של מילים בעברית.
+    </p>
+        <p>
+        בכל מקטע תשמעו את כל ההקלטות ולאחר מכן תיתנו ציון לכל הקלטה.
+    </p>
     <p>בבקשה לעשות את המבחן בחדר שקט ועם אוזניות.</p>
-    <p>לאלהשתמש בפיירפוקס כי הוא עושה בעיות... .אם יש קטעים שלא שומעים זה כי הם עדיין לא נטענו. לחכות בסבלנות בבקשה. לא
+    <p>לאלהשתמש בפיירפוקס כי הוא עושה בעיות. .אם יש קטעים שלא שומעים זה כי הם עדיין לא נטענו. לחכות בסבלנות בבקשה. לא
         אמור להיות אף קטע שהוא שקט</p>
-    <p>מבחן איכות השמע אמור להיות קצר: נבקש שתאזינו פעם או פעמיים לכל דוגמא, תדרגו אותה ותמשיכו הלאה בלי לחזור אחורה
-        ולשנות ציון קודם.</p>
-    <p>ציוני הקטעים יעזרו לנו לכתוב מאמר על אלגוריתמים בשפה העברית.</p>
-    <p>תודה רבה על ההשתתפות! רועי ואוריין</p>
+
+
+    <p>תודה רבה על ההשתתפות! עמית</p>
 
         </div>
     </div>
@@ -76,15 +83,21 @@
                         </p>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="robo1"
-                                   id="robo1_1"
-                                   value="5" required>
-                            <label class="form-check-label" for="robo1_1">5 (מצויין)</label>
+                                   id="robo1_6"
+                                   value="6" required>
+                            <label class="form-check-label" for="robo1_6">6 (מצויין)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="robo1"
-                                   id="robo1_2"
+                                   id="robo1_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="robo1_5">5 (טוב מאוד)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="robo1"
+                                   id="robo1_4"
                                    value="4" required>
-                            <label class="form-check-label" for="robo1_2">4 (טוב)</label>
+                            <label class="form-check-label" for="robo1_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="robo1"
@@ -94,15 +107,15 @@
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="robo1"
-                                   id="robo1_4"
+                                   id="robo1_2"
                                    value="2" required>
-                            <label class="form-check-label" for="robo1_4">2 (רע)</label>
+                            <label class="form-check-label" for="robo1_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="robo1"
-                                   id="robo1_5"
+                                   id="robo1_1"
                                    value="1" required>
-                            <label class="form-check-label" for="robo1_5">1 (גרוע)</label>
+                            <label class="form-check-label" for="robo1_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
@@ -118,15 +131,21 @@
                         </p>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="mms1"
-                                   id="mms1_1"
-                                   value="5" required>
-                            <label class="form-check-label" for="mms1_1">5 (מצויין)</label>
+                                   id="mms1_6"
+                                   value="6" required>
+                            <label class="form-check-label" for="mms1_6">6 (מצויין)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="mms1"
-                                   id="mms1_2"
+                                   id="mms1_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="mms1_5">5 (טוב מאוד)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms1"
+                                   id="mms1_4"
                                    value="4" required>
-                            <label class="form-check-label" for="mms1_2">4 (טוב)</label>
+                            <label class="form-check-label" for="mms1_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="mms1"
@@ -136,15 +155,15 @@
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="mms1"
-                                   id="mms1_4"
+                                   id="mms1_2"
                                    value="2" required>
-                            <label class="form-check-label" for="mms1_4">2 (רע)</label>
+                            <label class="form-check-label" for="mms1_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="mms1"
-                                   id="mms1_5"
+                                   id="mms1_1"
                                    value="1" required>
-                            <label class="form-check-label" for="mms1_5">1 (גרוע)</label>
+                            <label class="form-check-label" for="mms1_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
@@ -160,15 +179,21 @@
                         </p>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="words1"
-                                   id="words1_1"
-                                   value="5" required>
-                            <label class="form-check-label" for="words1_1">5 (מצויין)</label>
+                                   id="words1_6"
+                                   value="6" required>
+                            <label class="form-check-label" for="words1_6">6 (מצויין)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="words1"
-                                   id="words1_2"
+                                   id="words1_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="words1_5">5 (טוב מאוד)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="words1"
+                                   id="words1_4"
                                    value="4" required>
-                            <label class="form-check-label" for="words1_2">4 (טוב)</label>
+                            <label class="form-check-label" for="words1_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="words1"
@@ -178,15 +203,15 @@
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="words1"
-                                   id="words1_4"
+                                   id="words1_2"
                                    value="2" required>
-                            <label class="form-check-label" for="words1_4">2 (רע)</label>
+                            <label class="form-check-label" for="words1_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="words1"
-                                   id="words1_5"
+                                   id="words1_1"
                                    value="1" required>
-                            <label class="form-check-label" for="words1_5">1 (גרוע)</label>
+                            <label class="form-check-label" for="words1_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
@@ -202,15 +227,21 @@
                         </p>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="alephbert1"
-                                   id="alephbert1_1"
-                                   value="5" required>
-                            <label class="form-check-label" for="alephbert1_1">5 (מצויין)</label>
+                                   id="alephbert1_6"
+                                   value="6" required>
+                            <label class="form-check-label" for="alephbert1_6">6 (מצויין)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="alephbert1"
-                                   id="alephbert1_2"
+                                   id="alephbert1_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="alephbert1_5">5 (טוב מאוד)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="alephbert1"
+                                   id="alephbert1_4"
                                    value="4" required>
-                            <label class="form-check-label" for="alephbert1_2">4 (טוב)</label>
+                            <label class="form-check-label" for="alephbert1_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="alephbert1"
@@ -220,15 +251,15 @@
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="alephbert1"
-                                   id="alephbert1_4"
+                                   id="alephbert1_2"
                                    value="2" required>
-                            <label class="form-check-label" for="alephbert1_4">2 (רע)</label>
+                            <label class="form-check-label" for="alephbert1_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="alephbert1"
-                                   id="alephbert1_5"
+                                   id="alephbert1_1"
                                    value="1" required>
-                            <label class="form-check-label" for="alephbert1_5">1 (גרוע)</label>
+                            <label class="form-check-label" for="alephbert1_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
@@ -253,15 +284,21 @@
                         </p>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="robo2"
-                                   id="robo2_1"
-                                   value="5" required>
-                            <label class="form-check-label" for="robo2_1">5 (מצויין)</label>
+                                   id="robo2_6"
+                                   value="6" required>
+                            <label class="form-check-label" for="robo2_6">6 (מצויין)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="robo2"
-                                   id="robo2_2"
+                                   id="robo2_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="robo2_5">5 (טוב מאוד)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="robo2"
+                                   id="robo2_4"
                                    value="4" required>
-                            <label class="form-check-label" for="robo2_2">4 (טוב)</label>
+                            <label class="form-check-label" for="robo2_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="robo2"
@@ -271,15 +308,15 @@
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="robo2"
-                                   id="robo2_4"
+                                   id="robo2_2"
                                    value="2" required>
-                            <label class="form-check-label" for="robo2_4">2 (רע)</label>
+                            <label class="form-check-label" for="robo2_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="robo2"
-                                   id="robo2_5"
+                                   id="robo2_1"
                                    value="1" required>
-                            <label class="form-check-label" for="robo2_5">1 (גרוע)</label>
+                            <label class="form-check-label" for="robo2_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
@@ -295,15 +332,21 @@
                         </p>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="mms2"
-                                   id="mms2_1"
-                                   value="5" required>
-                            <label class="form-check-label" for="mms2_1">5 (מצויין)</label>
+                                   id="mms2_6"
+                                   value="6" required>
+                            <label class="form-check-label" for="mms2_6">6 (מצויין)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="mms2"
-                                   id="mms2_2"
+                                   id="mms2_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="mms2_5">5 (טוב מאוד)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms2"
+                                   id="mms2_4"
                                    value="4" required>
-                            <label class="form-check-label" for="mms2_2">4 (טוב)</label>
+                            <label class="form-check-label" for="mms2_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="mms2"
@@ -313,15 +356,15 @@
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="mms2"
-                                   id="mms2_4"
+                                   id="mms2_2"
                                    value="2" required>
-                            <label class="form-check-label" for="mms2_4">2 (רע)</label>
+                            <label class="form-check-label" for="mms2_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="mms2"
-                                   id="mms2_5"
+                                   id="mms2_1"
                                    value="1" required>
-                            <label class="form-check-label" for="mms2_5">1 (גרוע)</label>
+                            <label class="form-check-label" for="mms2_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
@@ -337,15 +380,21 @@
                         </p>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="words2"
-                                   id="words2_1"
-                                   value="5" required>
-                            <label class="form-check-label" for="words2_1">5 (מצויין)</label>
+                                   id="words2_6"
+                                   value="6" required>
+                            <label class="form-check-label" for="words2_6">6 (מצויין)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="words2"
-                                   id="words2_2"
+                                   id="words2_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="words2_5">5 (טוב מאוד)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="words2"
+                                   id="words2_4"
                                    value="4" required>
-                            <label class="form-check-label" for="words2_2">4 (טוב)</label>
+                            <label class="form-check-label" for="words2_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="words2"
@@ -355,15 +404,15 @@
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="words2"
-                                   id="words2_4"
+                                   id="words2_2"
                                    value="2" required>
-                            <label class="form-check-label" for="words2_4">2 (רע)</label>
+                            <label class="form-check-label" for="words2_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="words2"
-                                   id="words2_5"
+                                   id="words2_1"
                                    value="1" required>
-                            <label class="form-check-label" for="words2_5">1 (גרוע)</label>
+                            <label class="form-check-label" for="words2_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
@@ -379,15 +428,21 @@
                         </p>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="alephbert2"
-                                   id="alephbert2_1"
-                                   value="5" required>
-                            <label class="form-check-label" for="alephbert2_1">5 (מצויין)</label>
+                                   id="alephbert2_6"
+                                   value="6" required>
+                            <label class="form-check-label" for="alephbert2_6">6 (מצויין)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="alephbert2"
-                                   id="alephbert2_2"
+                                   id="alephbert2_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="alephbert2_5">5 (טוב מאוד)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="alephbert2"
+                                   id="alephbert2_4"
                                    value="4" required>
-                            <label class="form-check-label" for="alephbert2_2">4 (טוב)</label>
+                            <label class="form-check-label" for="alephbert2_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="alephbert2"
@@ -397,15 +452,15 @@
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="alephbert2"
-                                   id="alephbert2_4"
+                                   id="alephbert2_2"
                                    value="2" required>
-                            <label class="form-check-label" for="alephbert2_4">2 (רע)</label>
+                            <label class="form-check-label" for="alephbert2_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="alephbert2"
-                                   id="alephbert2_5"
+                                   id="alephbert2_1"
                                    value="1" required>
-                            <label class="form-check-label" for="alephbert2_5">1 (גרוע)</label>
+                            <label class="form-check-label" for="alephbert2_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
