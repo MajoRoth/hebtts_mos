@@ -2,127 +2,168 @@
 <html>
 
 <head>
-    <title>MOS 實驗表單 1</title>
+    <title>MOS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
         integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <!-- hack to fix rtl in form -->
+    <style>
+    .form-check-label {
+        padding-right: 1.25rem;
+    }
+    </style>
 </head>
 
-<body>
+<body dir="rtl" style="direction : rtl; text-align: inherit">
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            
-    <h1 class="display-4">MOS 實驗</h1>
-    <p class="lead">合成語音品質評估</p>
+
+    <h1 class="display-4">מבחן איכות שמע</h1>
+    <p class="lead">רובו-שאול</p>
     <hr class="my-4">
+
     <p>
-        感謝您參與本次實驗！
-    </p>
-    <p>
-        在這個實驗中，我們使用電腦合成人類語音。
-        以下的音檔中，包含了真實的錄音以及合成的聲音，並且每句話都有附上文字稿。
-        請受試者使用耳機聆聽，並根據每個音檔的品質，給予以下幾種評分：
+        בשאלון הקרוב תתבקשו לדרג את איכות השמע בקטעי דיבור קצרים שעברו עיבוד. ציון איכות השמע יהיה בין 1 (גרוע) ל-5 (מצויין), כאשר:
         <ul>
-            <li>１（非常不好）</li>
-            <li>２（不好）</li>
-            <li>３（普通）</li>
-            <li>４（好）</li>
-            <li>５（非常好）</li>
+            <li>ציון 1 - גרוע - אם יש הפרעות מאוד מציקות</li>
+            <li>ציון 2 - רע - אם יש הפרעות מציקות</li>
+            <li>ציון 3 - בינוני - אם יש הפרעות קצת מציקות</li>
+            <li>ציון 4 - טוב - אם יש הפרעות שניתן לשמוע אבל לא מציקות</li>
+            <li>ציון 5 - מצויין - אם לא ניתן לשמוע הפרעות</li>
         </ul>
     </p>
+    <p>בבקשה לעשות את המבחן בחדר שקט ועם אוזניות.</p>
+    <p>לאלהשתמש בפיירפוקס כי הוא עושה בעיות... .אם יש קטעים שלא שומעים זה כי הם עדיין לא נטענו. לחכות בסבלנות בבקשה. לא אמור להיות אף קטע שהוא שקט</p>
+    <p>מבחן איכות השמע אמור להיות קצר: נבקש שתאזינו פעם או פעמיים לכל דוגמא, תדרגו אותה ותמשיכו הלאה בלי לחזור אחורה ולשנות ציון קודם.</p>
+    <p>ציוני הקטעים יעזרו לנו לכתוב מאמר על אלגוריתמים בשפה העברית.</p>
+    <p>תודה רבה על ההשתתפות! רועי ואוריין</p>
 
         </div>
     </div>
 
     <div class="container" id="form_container">
-        <form id="theForm" action="http://localhost:8888" method="GET" onsubmit="return preventRepeatedSubmission();">
+        <form id="theForm" action="https://script.google.com/macros/s/AKfycbxbVMQc6QRjAAZsEBjWesC0RScmRRuJAO4_i-wpDWeU86_b3x24Ge1o1CmH1qCiwKqUxA/exec" method="GET" onsubmit="return preventRepeatedSubmission();">
             <div class="form-group">
-                <label for="name">姓名：</label>
+                <label for="name">שם：</label>
                 <input class="form-control" type="text" inputmode="text" name="name" required>
-                <small class="form-text text-muted">必填*</small>
+                <small class="form-text text-muted">שם מלא</small>
             </div>
             <div class="form-group">
-                <label for="mail">電子郵件：</label>
+                <label for="mail">מייל：</label>
                 <input class="form-control" type="text" inputmode="email" placeholder="account@example.com" name="mail">
-                <small class="form-text text-muted">如果中獎，我們將以電子郵件通知您</small>
+                <small class="form-text text-muted">האימייל שלך</small>
             </div>
-            
-    
+            <div id="questions">
+
+
         <div class="card form-group">
-            <div class="card-header">問題 1</div>
+            <div class="card-header">recording 1</div>
             <div class="card-body">
                 <p>
-                    <audio controls src="wavs/test1.wav">
+                    <audio controls src="samples/mms_10.wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q0" id="q0_1" value="5" required>
+                    <label class="form-check-label" for="q0_1">5 (מצויין)</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q0" id="q0_2" value="4" required>
+                    <label class="form-check-label" for="q0_2">4 (טוב)</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q0" id="q0_3" value="3" required>
+                    <label class="form-check-label" for="q0_3">3 (בינוני)</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q0" id="q0_4" value="2" required>
+                    <label class="form-check-label" for="q0_4">2 (רע)</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q0" id="q0_5" value="1" required>
+                    <label class="form-check-label" for="q0_5">1 (גרוע)</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="card form-group">
+            <div class="card-header">recording 2</div>
+            <div class="card-body">
+                <p>
+                    <audio controls src="samples/mms_8.wav">
                         Your browser does not support the audio element.
                     </audio>
                 </p>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q1" id="q1_1" value="5" required>
-                    <label class="form-check-label" for="q1_1">５（非常好）</label>
+                    <label class="form-check-label" for="q1_1">5 (מצויין)</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q1" id="q1_2" value="4" required>
-                    <label class="form-check-label" for="q1_2">４（好）</label>
+                    <label class="form-check-label" for="q1_2">4 (טוב)</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q1" id="q1_3" value="3" required>
-                    <label class="form-check-label" for="q1_3">３（普通）</label>
+                    <label class="form-check-label" for="q1_3">3 (בינוני)</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q1" id="q1_4" value="2" required>
-                    <label class="form-check-label" for="q1_4">２（不好）</label>
+                    <label class="form-check-label" for="q1_4">2 (רע)</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q1" id="q1_5" value="1" required>
-                    <label class="form-check-label" for="q1_5">１（非常不好）</label>
+                    <label class="form-check-label" for="q1_5">1 (גרוע)</label>
                 </div>
             </div>
         </div>
-    
+
         <div class="card form-group">
-            <div class="card-header">問題 2</div>
+            <div class="card-header">recording 3</div>
             <div class="card-body">
                 <p>
-                    <audio controls src="wavs/test2.wav">
+                    <audio controls src="samples/mms_9.wav">
                         Your browser does not support the audio element.
                     </audio>
                 </p>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q2" id="q2_1" value="5" required>
-                    <label class="form-check-label" for="q2_1">５（非常好）</label>
+                    <label class="form-check-label" for="q2_1">5 (מצויין)</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q2" id="q2_2" value="4" required>
-                    <label class="form-check-label" for="q2_2">４（好）</label>
+                    <label class="form-check-label" for="q2_2">4 (טוב)</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q2" id="q2_3" value="3" required>
-                    <label class="form-check-label" for="q2_3">３（普通）</label>
+                    <label class="form-check-label" for="q2_3">3 (בינוני)</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q2" id="q2_4" value="2" required>
-                    <label class="form-check-label" for="q2_4">２（不好）</label>
+                    <label class="form-check-label" for="q2_4">2 (רע)</label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="q2" id="q2_5" value="1" required>
-                    <label class="form-check-label" for="q2_5">１（非常不好）</label>
+                    <label class="form-check-label" for="q2_5">1 (גרוע)</label>
                 </div>
             </div>
         </div>
-    
 
+
+            </div>
             <input type="text" name="formid" value="1" hidden>
-            <input type="text" name="thank" value="再次謝謝您參與本次實驗！" hidden>
-            <input class="btn btn-info btn-lg" type="submit" value="提交結果" id="submitBtn">
+            <input type="text" name="thank" value="תודה！" hidden>
+            <input class="btn btn-info btn-lg" type="submit" value="הגש" id="submitBtn">
             <p class="text-muted">
-                <small>如果提交結果時發現繳不出去，請回頭檢查是否有填入姓名、是否每一題都有作答到，謝謝。</small>
+                <small>אם לא עבר מסך אחרי כמה שניות כנראה שדילגת בטעות על דוגמא. צריך למלא ציונים לכל הדוגמאות.</small>
             </p>
         </form>
+        <!-- <button class="btn btn-lg btn-info" onclick="shuffleForm();">ערבל את הסדר</button> -->
     </div>
 
     <div class="container" style="padding-top: 60px;">
-        <p class="text-center text-muted">&copy; 台大語音實驗室</p>
+        <p class="text-center text-muted">&copy; רובו-שאול</p>
     </div>
 
     <script type="text/javascript">
@@ -131,6 +172,24 @@
             setTimeout("submitBtn.disabled=false;", 5000);
             return true;
         };
+
+        function shuffle(a) {
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+
+        function shuffleForm() {
+            let formItems = document.getElementsByClassName("card form-group");
+            let formArray = Array.from(formItems);
+            formArray.forEach((e) => e.remove());
+            shuffle(formArray);
+            let questions = document.getElementById("questions");
+            formArray.forEach((e) => questions.appendChild(e));
+        }
+        window.addEventListener('DOMContentLoaded', (e) => shuffleForm());
     </script>
 </body>
 
