@@ -18,26 +18,27 @@
 <body dir="rtl" style="direction : rtl; text-align: inherit">
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-
-    <h1 class="display-4">מבחן איכות שמע</h1>
+            
+    <h1 class="display-2">מבחן איכות שמע</h1>
     <p class="lead">האוניברסיטה העברית</p>
+
+    <h2 class="display-4">הוראות</h2>
     <hr class="my-4">
 
     <p>
         בשאלון הקרוב תתבקשו לדרג את איכות וטבעיות השמע בקטעי דיבור קצרים שיוצרו באופן מלאכותי. ציון איכות השמע יהיה בין
-        1 (גרוע) ל-6
+        1 (גרוע) ל-5
         (מצויין), כאשר:
     <ul>
         <li>ציון 1 - גרוע - אם יש הפרעות מאוד מציקות</li>
         <li>ציון 2 - רע - אם יש הפרעות מציקות</li>
         <li>ציון 3 - בינוני - אם יש הפרעות קצת מציקות</li>
-        <li>ציון 4 - טוב - אם יש הפרעות שניתן לשמוע אבל לא מציקות</li>
-        <li>ציון 5 - טוב מאוד - דיבור כמעט טבעי, הפרעות קטנות</li>
-        <li>ציון 6 - מצויין - דיבור טבעי</li>
+        <li>ציון 4 - טוב - הפרעות קטנות, כמעט טבעי</li>
+        <li>ציון 5 - מצויין - אין הפרעות, דיבור טבעי</li>
     </ul>
     </p>
     <p>
-        במתן הציון נסו להתייחס לאיכות הדיבור עצמו, צליל טבעי/רובוטי, קצב ושטף דיבור, והגייה נכונה של מילים בעברית ולא לרעשי רקע בדגימה.
+        במתן הציון נסו להתייחס לאיכות הדיבור עצמו, צליל טבעי/רובוטי, קצב ושטף דיבור, והגייה נכונה של מילים בעברית.
     </p>
         <p>
         בכל מקטע תשמעו את כל ההקלטות ולאחר מכן תיתנו ציון לכל הקלטה.
@@ -53,7 +54,7 @@
     </div>
 
     <div class="container" id="form_container">
-        <form id="theForm" action="https://script.google.com/macros/s/AKfycbw1f06tdnuvXvye-dU59qvTOlp5UDR2AaB2vXBu_Rrtyqh849tD2nYJ9aMzhJYdrnW4iw/exec" method="GET" onsubmit="return preventRepeatedSubmission();">
+        <form id="theForm" action="https://script.google.com/macros/s/AKfycbylNUBrNAY05AeTb65Cx9d6b4C7nIjAJl6hhtk3pPk2MOOl6yAqPWrJ2Un0XngVWGQb0Q/exec" method="GET" onsubmit="return preventRepeatedSubmission();">
             <div class="form-group">
                 <label for="name">שם：</label>
                 <input class="form-control" type="text" inputmode="text" name="name" required>
@@ -65,1013 +66,2693 @@
                 <small class="form-text text-muted">האימייל שלך</small>
             </div>
             <div id="questions">
-
-
+            
+    
         <div class="card">
-            <div class="card-header">טקסט: ובשביל להבין למה מחיר הדלק כל כך עלה, צריך לחזור שנתיים אחרונית.</div>
+            <div class="card-header">
+                0 טקסט: ובשביל להבין למה מחיר הדלק כל כך עלה, צריך לחזור שנתיים אחרונית.
+            </div>
 
 
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
                         <h1>mms</h1>
                         <p>
-                            <audio controls src="samples/mms/mms_2.wav">
+                            <audio controls src="samples/mms/1.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms1"
-                                   id="mms1_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="mms1_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms1"
-                                   id="mms1_5"
+                            <input class="form-check-input" type="radio" name="mms_1"
+                                   id="mms_1_5"
                                    value="5" required>
-                            <label class="form-check-label" for="mms1_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="mms_1_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms1"
-                                   id="mms1_4"
+                            <input class="form-check-input" type="radio" name="mms_1"
+                                   id="mms_1_4"
                                    value="4" required>
-                            <label class="form-check-label" for="mms1_4">4 (טוב)</label>
+                            <label class="form-check-label" for="mms_1_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms1"
-                                   id="mms1_3"
+                            <input class="form-check-input" type="radio" name="mms_1"
+                                   id="mms_1_3"
                                    value="3" required>
-                            <label class="form-check-label" for="mms1_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="mms_1_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms1"
-                                   id="mms1_2"
+                            <input class="form-check-input" type="radio" name="mms_1"
+                                   id="mms_1_2"
                                    value="2" required>
-                            <label class="form-check-label" for="mms1_2">2 (רע)</label>
+                            <label class="form-check-label" for="mms_1_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms1"
-                                   id="mms1_1"
+                            <input class="form-check-input" type="radio" name="mms_1"
+                                   id="mms_1_1"
                                    value="1" required>
-                            <label class="form-check-label" for="mms1_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="mms_1_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
-                        <h1>robo</h1>
+                        <h1>roboshaul</h1>
                         <p>
-                            <audio controls src="samples/roboshaul/robo_2.wav">
+                            <audio controls src="samples/roboshaul/1.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo1"
-                                   id="robo1_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="robo1_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo1"
-                                   id="robo1_5"
+                            <input class="form-check-input" type="radio" name="roboshaul_1"
+                                   id="roboshaul_1_5"
                                    value="5" required>
-                            <label class="form-check-label" for="robo1_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="roboshaul_1_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo1"
-                                   id="robo1_4"
+                            <input class="form-check-input" type="radio" name="roboshaul_1"
+                                   id="roboshaul_1_4"
                                    value="4" required>
-                            <label class="form-check-label" for="robo1_4">4 (טוב)</label>
+                            <label class="form-check-label" for="roboshaul_1_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo1"
-                                   id="robo1_3"
+                            <input class="form-check-input" type="radio" name="roboshaul_1"
+                                   id="roboshaul_1_3"
                                    value="3" required>
-                            <label class="form-check-label" for="robo1_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="roboshaul_1_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo1"
-                                   id="robo1_2"
+                            <input class="form-check-input" type="radio" name="roboshaul_1"
+                                   id="roboshaul_1_2"
                                    value="2" required>
-                            <label class="form-check-label" for="robo1_2">2 (רע)</label>
+                            <label class="form-check-label" for="roboshaul_1_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo1"
-                                   id="robo1_1"
+                            <input class="form-check-input" type="radio" name="roboshaul_1"
+                                   id="roboshaul_1_1"
                                    value="1" required>
-                            <label class="form-check-label" for="robo1_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="roboshaul_1_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
-                        <h1>valle robo</h1>
+                        <h1>word_osim</h1>
                         <p>
-                            <audio controls src="samples/word_roboshaul/roboshaul_roboshaul_top_50_temp_1_sample_1_2.wav">
+                            <audio controls src="samples/word_osim/1.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo1"
-                                   id="v-robo1_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="v-robo1_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo1"
-                                   id="v-robo1_5"
+                            <input class="form-check-input" type="radio" name="word_osim_1"
+                                   id="word_osim_1_5"
                                    value="5" required>
-                            <label class="form-check-label" for="v-robo1_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="word_osim_1_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo1"
-                                   id="v-robo1_4"
+                            <input class="form-check-input" type="radio" name="word_osim_1"
+                                   id="word_osim_1_4"
                                    value="4" required>
-                            <label class="form-check-label" for="v-robo1_4">4 (טוב)</label>
+                            <label class="form-check-label" for="word_osim_1_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo1"
-                                   id="v-robo1_3"
+                            <input class="form-check-input" type="radio" name="word_osim_1"
+                                   id="word_osim_1_3"
                                    value="3" required>
-                            <label class="form-check-label" for="v-robo1_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="word_osim_1_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo1"
-                                   id="v-robo1_2"
+                            <input class="form-check-input" type="radio" name="word_osim_1"
+                                   id="word_osim_1_2"
                                    value="2" required>
-                            <label class="form-check-label" for="v-robo1_2">2 (רע)</label>
+                            <label class="form-check-label" for="word_osim_1_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo1"
-                                   id="v-robo1_1"
+                            <input class="form-check-input" type="radio" name="word_osim_1"
+                                   id="word_osim_1_1"
                                    value="1" required>
-                            <label class="form-check-label" for="v-robo1_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="word_osim_1_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
-                        <h1>valle osim</h1>
+                        <h1>word_roboshaul</h1>
                         <p>
-                            <audio controls src="samples/word_osim/osim_osim_top_50_temp_1_sample_1_2.wav">
+                            <audio controls src="samples/word_roboshaul/1.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim1"
-                                   id="v-osim1_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="v-osim1_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim1"
-                                   id="v-osim1_5"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_1"
+                                   id="word_roboshaul_1_5"
                                    value="5" required>
-                            <label class="form-check-label" for="v-osim1_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="word_roboshaul_1_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim1"
-                                   id="v-osim1_4"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_1"
+                                   id="word_roboshaul_1_4"
                                    value="4" required>
-                            <label class="form-check-label" for="v-osim1_4">4 (טוב)</label>
+                            <label class="form-check-label" for="word_roboshaul_1_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim1"
-                                   id="v-osim1_3"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_1"
+                                   id="word_roboshaul_1_3"
                                    value="3" required>
-                            <label class="form-check-label" for="v-osim1_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="word_roboshaul_1_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim1"
-                                   id="v-osim1_2"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_1"
+                                   id="word_roboshaul_1_2"
                                    value="2" required>
-                            <label class="form-check-label" for="v-osim1_2">2 (רע)</label>
+                            <label class="form-check-label" for="word_roboshaul_1_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim1"
-                                   id="v-osim1_1"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_1"
+                                   id="word_roboshaul_1_1"
                                    value="1" required>
-                            <label class="form-check-label" for="v-osim1_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="word_roboshaul_1_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
 
         </div>
-
+    
         <div class="card">
-            <div class="card-header">טקסט: תגידו, גנבו לכם פעם את האוטו ופשוט ידעתם שאין טעם להגיש תלונה במשטרה</div>
+            <div class="card-header">
+                1 טקסט: תגידו, גנבו לכם פעם את האוטו ופשוט ידעתם שאין טעם להגיש תלונה במשטרה.
+            </div>
 
 
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
                         <h1>mms</h1>
                         <p>
-                            <audio controls src="samples/mms/mms_4.wav">
+                            <audio controls src="samples/mms/2.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms2"
-                                   id="mms2_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="mms2_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms2"
-                                   id="mms2_5"
+                            <input class="form-check-input" type="radio" name="mms_2"
+                                   id="mms_2_5"
                                    value="5" required>
-                            <label class="form-check-label" for="mms2_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="mms_2_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms2"
-                                   id="mms2_4"
+                            <input class="form-check-input" type="radio" name="mms_2"
+                                   id="mms_2_4"
                                    value="4" required>
-                            <label class="form-check-label" for="mms2_4">4 (טוב)</label>
+                            <label class="form-check-label" for="mms_2_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms2"
-                                   id="mms2_3"
+                            <input class="form-check-input" type="radio" name="mms_2"
+                                   id="mms_2_3"
                                    value="3" required>
-                            <label class="form-check-label" for="mms2_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="mms_2_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms2"
-                                   id="mms2_2"
+                            <input class="form-check-input" type="radio" name="mms_2"
+                                   id="mms_2_2"
                                    value="2" required>
-                            <label class="form-check-label" for="mms2_2">2 (רע)</label>
+                            <label class="form-check-label" for="mms_2_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms2"
-                                   id="mms2_1"
+                            <input class="form-check-input" type="radio" name="mms_2"
+                                   id="mms_2_1"
                                    value="1" required>
-                            <label class="form-check-label" for="mms2_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="mms_2_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
-                        <h1>robo</h1>
+                        <h1>roboshaul</h1>
                         <p>
-                            <audio controls src="samples/roboshaul/robo_4.wav">
+                            <audio controls src="samples/roboshaul/2.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo2"
-                                   id="robo2_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="robo2_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo2"
-                                   id="robo2_5"
+                            <input class="form-check-input" type="radio" name="roboshaul_2"
+                                   id="roboshaul_2_5"
                                    value="5" required>
-                            <label class="form-check-label" for="robo2_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="roboshaul_2_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo2"
-                                   id="robo2_4"
+                            <input class="form-check-input" type="radio" name="roboshaul_2"
+                                   id="roboshaul_2_4"
                                    value="4" required>
-                            <label class="form-check-label" for="robo2_4">4 (טוב)</label>
+                            <label class="form-check-label" for="roboshaul_2_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo2"
-                                   id="robo2_3"
+                            <input class="form-check-input" type="radio" name="roboshaul_2"
+                                   id="roboshaul_2_3"
                                    value="3" required>
-                            <label class="form-check-label" for="robo2_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="roboshaul_2_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo2"
-                                   id="robo2_2"
+                            <input class="form-check-input" type="radio" name="roboshaul_2"
+                                   id="roboshaul_2_2"
                                    value="2" required>
-                            <label class="form-check-label" for="robo2_2">2 (רע)</label>
+                            <label class="form-check-label" for="roboshaul_2_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo2"
-                                   id="robo2_1"
+                            <input class="form-check-input" type="radio" name="roboshaul_2"
+                                   id="roboshaul_2_1"
                                    value="1" required>
-                            <label class="form-check-label" for="robo2_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="roboshaul_2_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
-                        <h1>valle robo</h1>
+                        <h1>word_osim</h1>
                         <p>
-                            <audio controls src="samples/word_roboshaul/roboshaul_roboshaul_top_50_temp_1_sample_3_0.wav">
+                            <audio controls src="samples/word_osim/2.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo2"
-                                   id="v-robo2_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="v-robo2_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo2"
-                                   id="v-robo2_5"
+                            <input class="form-check-input" type="radio" name="word_osim_2"
+                                   id="word_osim_2_5"
                                    value="5" required>
-                            <label class="form-check-label" for="v-robo2_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="word_osim_2_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo2"
-                                   id="v-robo2_4"
+                            <input class="form-check-input" type="radio" name="word_osim_2"
+                                   id="word_osim_2_4"
                                    value="4" required>
-                            <label class="form-check-label" for="v-robo2_4">4 (טוב)</label>
+                            <label class="form-check-label" for="word_osim_2_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo2"
-                                   id="v-robo2_3"
+                            <input class="form-check-input" type="radio" name="word_osim_2"
+                                   id="word_osim_2_3"
                                    value="3" required>
-                            <label class="form-check-label" for="v-robo2_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="word_osim_2_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo2"
-                                   id="v-robo2_2"
+                            <input class="form-check-input" type="radio" name="word_osim_2"
+                                   id="word_osim_2_2"
                                    value="2" required>
-                            <label class="form-check-label" for="v-robo2_2">2 (רע)</label>
+                            <label class="form-check-label" for="word_osim_2_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo2"
-                                   id="v-robo2_1"
+                            <input class="form-check-input" type="radio" name="word_osim_2"
+                                   id="word_osim_2_1"
                                    value="1" required>
-                            <label class="form-check-label" for="v-robo2_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="word_osim_2_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
-                        <h1>valle osim</h1>
+                        <h1>word_roboshaul</h1>
                         <p>
-                            <audio controls src="samples/word_osim/osim_osim_top_50_temp_1_sample_3_2.wav">
+                            <audio controls src="samples/word_roboshaul/2.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim2"
-                                   id="v-osim2_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="v-osim2_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim2"
-                                   id="v-osim2_5"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_2"
+                                   id="word_roboshaul_2_5"
                                    value="5" required>
-                            <label class="form-check-label" for="v-osim2_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="word_roboshaul_2_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim2"
-                                   id="v-osim2_4"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_2"
+                                   id="word_roboshaul_2_4"
                                    value="4" required>
-                            <label class="form-check-label" for="v-osim2_4">4 (טוב)</label>
+                            <label class="form-check-label" for="word_roboshaul_2_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim2"
-                                   id="v-osim2_3"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_2"
+                                   id="word_roboshaul_2_3"
                                    value="3" required>
-                            <label class="form-check-label" for="v-osim2_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="word_roboshaul_2_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim2"
-                                   id="v-osim2_2"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_2"
+                                   id="word_roboshaul_2_2"
                                    value="2" required>
-                            <label class="form-check-label" for="v-osim2_2">2 (רע)</label>
+                            <label class="form-check-label" for="word_roboshaul_2_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim2"
-                                   id="v-osim2_1"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_2"
+                                   id="word_roboshaul_2_1"
                                    value="1" required>
-                            <label class="form-check-label" for="v-osim2_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="word_roboshaul_2_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
 
         </div>
-
+    
         <div class="card">
-            <div class="card-header">טקסט: מה שבהגדרה משאיר את הכלכלה ההונגרית מאחור, אפילו ביחס למדינות כמו פולין</div>
+            <div class="card-header">
+                2 טקסט: מה שבהגדרה משאיר את הכלכלה ההונגרית מאחור, אפילו ביחס למדינות כמו פולין.
+            </div>
 
 
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
                         <h1>mms</h1>
                         <p>
-                            <audio controls src="samples/mms/mms_5.wav">
+                            <audio controls src="samples/mms/3.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms3"
-                                   id="mms3_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="mms3_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms3"
-                                   id="mms3_5"
+                            <input class="form-check-input" type="radio" name="mms_3"
+                                   id="mms_3_5"
                                    value="5" required>
-                            <label class="form-check-label" for="mms3_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="mms_3_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms3"
-                                   id="mms3_4"
+                            <input class="form-check-input" type="radio" name="mms_3"
+                                   id="mms_3_4"
                                    value="4" required>
-                            <label class="form-check-label" for="mms3_4">4 (טוב)</label>
+                            <label class="form-check-label" for="mms_3_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms3"
-                                   id="mms3_3"
+                            <input class="form-check-input" type="radio" name="mms_3"
+                                   id="mms_3_3"
                                    value="3" required>
-                            <label class="form-check-label" for="mms3_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="mms_3_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms3"
-                                   id="mms3_2"
+                            <input class="form-check-input" type="radio" name="mms_3"
+                                   id="mms_3_2"
                                    value="2" required>
-                            <label class="form-check-label" for="mms3_2">2 (רע)</label>
+                            <label class="form-check-label" for="mms_3_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms3"
-                                   id="mms3_1"
+                            <input class="form-check-input" type="radio" name="mms_3"
+                                   id="mms_3_1"
                                    value="1" required>
-                            <label class="form-check-label" for="mms3_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="mms_3_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
-                        <h1>robo</h1>
+                        <h1>roboshaul</h1>
                         <p>
-                            <audio controls src="samples/roboshaul/robo_5.wav">
+                            <audio controls src="samples/roboshaul/3.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo3"
-                                   id="robo3_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="robo3_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo3"
-                                   id="robo3_5"
+                            <input class="form-check-input" type="radio" name="roboshaul_3"
+                                   id="roboshaul_3_5"
                                    value="5" required>
-                            <label class="form-check-label" for="robo3_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="roboshaul_3_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo3"
-                                   id="robo3_4"
+                            <input class="form-check-input" type="radio" name="roboshaul_3"
+                                   id="roboshaul_3_4"
                                    value="4" required>
-                            <label class="form-check-label" for="robo3_4">4 (טוב)</label>
+                            <label class="form-check-label" for="roboshaul_3_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo3"
-                                   id="robo3_3"
+                            <input class="form-check-input" type="radio" name="roboshaul_3"
+                                   id="roboshaul_3_3"
                                    value="3" required>
-                            <label class="form-check-label" for="robo3_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="roboshaul_3_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo3"
-                                   id="robo3_2"
+                            <input class="form-check-input" type="radio" name="roboshaul_3"
+                                   id="roboshaul_3_2"
                                    value="2" required>
-                            <label class="form-check-label" for="robo3_2">2 (רע)</label>
+                            <label class="form-check-label" for="roboshaul_3_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo3"
-                                   id="robo3_1"
+                            <input class="form-check-input" type="radio" name="roboshaul_3"
+                                   id="roboshaul_3_1"
                                    value="1" required>
-                            <label class="form-check-label" for="robo3_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="roboshaul_3_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
-                        <h1>valle robo</h1>
+                        <h1>word_osim</h1>
                         <p>
-                            <audio controls src="samples/word_roboshaul/roboshaul_roboshaul_top_50_temp_1_sample_4_1.wav">
+                            <audio controls src="samples/word_osim/3.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo3"
-                                   id="v-robo3_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="v-robo3_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo3"
-                                   id="v-robo3_5"
+                            <input class="form-check-input" type="radio" name="word_osim_3"
+                                   id="word_osim_3_5"
                                    value="5" required>
-                            <label class="form-check-label" for="v-robo3_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="word_osim_3_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo3"
-                                   id="v-robo3_4"
+                            <input class="form-check-input" type="radio" name="word_osim_3"
+                                   id="word_osim_3_4"
                                    value="4" required>
-                            <label class="form-check-label" for="v-robo3_4">4 (טוב)</label>
+                            <label class="form-check-label" for="word_osim_3_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo3"
-                                   id="v-robo3_3"
+                            <input class="form-check-input" type="radio" name="word_osim_3"
+                                   id="word_osim_3_3"
                                    value="3" required>
-                            <label class="form-check-label" for="v-robo3_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="word_osim_3_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo3"
-                                   id="v-robo3_2"
+                            <input class="form-check-input" type="radio" name="word_osim_3"
+                                   id="word_osim_3_2"
                                    value="2" required>
-                            <label class="form-check-label" for="v-robo3_2">2 (רע)</label>
+                            <label class="form-check-label" for="word_osim_3_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo3"
-                                   id="v-robo3_1"
+                            <input class="form-check-input" type="radio" name="word_osim_3"
+                                   id="word_osim_3_1"
                                    value="1" required>
-                            <label class="form-check-label" for="v-robo3_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="word_osim_3_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
-                        <h1>valle osim</h1>
+                        <h1>word_roboshaul</h1>
                         <p>
-                            <audio controls src="samples/word_osim/osim_osim_top_50_temp_1_sample_4_0.wav">
+                            <audio controls src="samples/word_roboshaul/3.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim3"
-                                   id="v-osim3_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="v-osim3_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim3"
-                                   id="v-osim3_5"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_3"
+                                   id="word_roboshaul_3_5"
                                    value="5" required>
-                            <label class="form-check-label" for="v-osim3_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="word_roboshaul_3_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim3"
-                                   id="v-osim3_4"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_3"
+                                   id="word_roboshaul_3_4"
                                    value="4" required>
-                            <label class="form-check-label" for="v-osim3_4">4 (טוב)</label>
+                            <label class="form-check-label" for="word_roboshaul_3_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim3"
-                                   id="v-osim3_3"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_3"
+                                   id="word_roboshaul_3_3"
                                    value="3" required>
-                            <label class="form-check-label" for="v-osim3_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="word_roboshaul_3_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim3"
-                                   id="v-osim3_2"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_3"
+                                   id="word_roboshaul_3_2"
                                    value="2" required>
-                            <label class="form-check-label" for="v-osim3_2">2 (רע)</label>
+                            <label class="form-check-label" for="word_roboshaul_3_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim3"
-                                   id="v-osim3_1"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_3"
+                                   id="word_roboshaul_3_1"
                                    value="1" required>
-                            <label class="form-check-label" for="v-osim3_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="word_roboshaul_3_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
 
         </div>
-
+    
         <div class="card">
-            <div class="card-header">טקסט: הדרבי תמיד היה המשחק הכי חשוב, אך בשנים האחרונות הוא נעשה כמעט הדבר היחיד שחשוב</div>
+            <div class="card-header">
+                3 טקסט: הדרבי תמיד היה המשחק הכי חשוב, אך בשנים האחרונות הוא נעשה כמעט הדבר היחיד שחשוב.
+            </div>
 
 
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
                         <h1>mms</h1>
                         <p>
-                            <audio controls src="samples/mms/mms_6.wav">
+                            <audio controls src="samples/mms/4.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms4"
-                                   id="mms4_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="mms4_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms4"
-                                   id="mms4_5"
+                            <input class="form-check-input" type="radio" name="mms_4"
+                                   id="mms_4_5"
                                    value="5" required>
-                            <label class="form-check-label" for="mms4_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="mms_4_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms4"
-                                   id="mms4_4"
+                            <input class="form-check-input" type="radio" name="mms_4"
+                                   id="mms_4_4"
                                    value="4" required>
-                            <label class="form-check-label" for="mms4_4">4 (טוב)</label>
+                            <label class="form-check-label" for="mms_4_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms4"
-                                   id="mms4_3"
+                            <input class="form-check-input" type="radio" name="mms_4"
+                                   id="mms_4_3"
                                    value="3" required>
-                            <label class="form-check-label" for="mms4_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="mms_4_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms4"
-                                   id="mms4_2"
+                            <input class="form-check-input" type="radio" name="mms_4"
+                                   id="mms_4_2"
                                    value="2" required>
-                            <label class="form-check-label" for="mms4_2">2 (רע)</label>
+                            <label class="form-check-label" for="mms_4_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms4"
-                                   id="mms4_1"
+                            <input class="form-check-input" type="radio" name="mms_4"
+                                   id="mms_4_1"
                                    value="1" required>
-                            <label class="form-check-label" for="mms4_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="mms_4_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
-                        <h1>robo</h1>
+                        <h1>roboshaul</h1>
                         <p>
-                            <audio controls src="samples/roboshaul/robo_6.wav">
+                            <audio controls src="samples/roboshaul/4.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo4"
-                                   id="robo4_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="robo4_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo4"
-                                   id="robo4_5"
+                            <input class="form-check-input" type="radio" name="roboshaul_4"
+                                   id="roboshaul_4_5"
                                    value="5" required>
-                            <label class="form-check-label" for="robo4_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="roboshaul_4_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo4"
-                                   id="robo4_4"
+                            <input class="form-check-input" type="radio" name="roboshaul_4"
+                                   id="roboshaul_4_4"
                                    value="4" required>
-                            <label class="form-check-label" for="robo4_4">4 (טוב)</label>
+                            <label class="form-check-label" for="roboshaul_4_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo4"
-                                   id="robo4_3"
+                            <input class="form-check-input" type="radio" name="roboshaul_4"
+                                   id="roboshaul_4_3"
                                    value="3" required>
-                            <label class="form-check-label" for="robo4_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="roboshaul_4_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo4"
-                                   id="robo4_2"
+                            <input class="form-check-input" type="radio" name="roboshaul_4"
+                                   id="roboshaul_4_2"
                                    value="2" required>
-                            <label class="form-check-label" for="robo4_2">2 (רע)</label>
+                            <label class="form-check-label" for="roboshaul_4_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo4"
-                                   id="robo4_1"
+                            <input class="form-check-input" type="radio" name="roboshaul_4"
+                                   id="roboshaul_4_1"
                                    value="1" required>
-                            <label class="form-check-label" for="robo4_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="roboshaul_4_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
-                        <h1>valle robo</h1>
+                        <h1>word_osim</h1>
                         <p>
-                            <audio controls src="samples/word_roboshaul/roboshaul_roboshaul_top_50_temp_1_sample_5_0.wav">
+                            <audio controls src="samples/word_osim/4.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo4"
-                                   id="v-robo4_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="v-robo4_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo4"
-                                   id="v-robo4_5"
+                            <input class="form-check-input" type="radio" name="word_osim_4"
+                                   id="word_osim_4_5"
                                    value="5" required>
-                            <label class="form-check-label" for="v-robo4_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="word_osim_4_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo4"
-                                   id="v-robo4_4"
+                            <input class="form-check-input" type="radio" name="word_osim_4"
+                                   id="word_osim_4_4"
                                    value="4" required>
-                            <label class="form-check-label" for="v-robo4_4">4 (טוב)</label>
+                            <label class="form-check-label" for="word_osim_4_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo4"
-                                   id="v-robo4_3"
+                            <input class="form-check-input" type="radio" name="word_osim_4"
+                                   id="word_osim_4_3"
                                    value="3" required>
-                            <label class="form-check-label" for="v-robo4_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="word_osim_4_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo4"
-                                   id="v-robo4_2"
+                            <input class="form-check-input" type="radio" name="word_osim_4"
+                                   id="word_osim_4_2"
                                    value="2" required>
-                            <label class="form-check-label" for="v-robo4_2">2 (רע)</label>
+                            <label class="form-check-label" for="word_osim_4_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo4"
-                                   id="v-robo4_1"
+                            <input class="form-check-input" type="radio" name="word_osim_4"
+                                   id="word_osim_4_1"
                                    value="1" required>
-                            <label class="form-check-label" for="v-robo4_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="word_osim_4_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
-                        <h1>valle osim</h1>
+                        <h1>word_roboshaul</h1>
                         <p>
-                            <audio controls src="samples/word_osim/osim_osim_top_50_temp_1_sample_5_0.wav">
+                            <audio controls src="samples/word_roboshaul/4.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim4"
-                                   id="v-osim4_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="v-osim4_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim4"
-                                   id="v-osim4_5"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_4"
+                                   id="word_roboshaul_4_5"
                                    value="5" required>
-                            <label class="form-check-label" for="v-osim4_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="word_roboshaul_4_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim4"
-                                   id="v-osim4_4"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_4"
+                                   id="word_roboshaul_4_4"
                                    value="4" required>
-                            <label class="form-check-label" for="v-osim4_4">4 (טוב)</label>
+                            <label class="form-check-label" for="word_roboshaul_4_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim4"
-                                   id="v-osim4_3"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_4"
+                                   id="word_roboshaul_4_3"
                                    value="3" required>
-                            <label class="form-check-label" for="v-osim4_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="word_roboshaul_4_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim4"
-                                   id="v-osim4_2"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_4"
+                                   id="word_roboshaul_4_2"
                                    value="2" required>
-                            <label class="form-check-label" for="v-osim4_2">2 (רע)</label>
+                            <label class="form-check-label" for="word_roboshaul_4_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim4"
-                                   id="v-osim4_1"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_4"
+                                   id="word_roboshaul_4_1"
                                    value="1" required>
-                            <label class="form-check-label" for="v-osim4_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="word_roboshaul_4_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
 
         </div>
-
+    
         <div class="card">
-            <div class="card-header">טקסט: כשני שלישים מייצור הסוללות העולמי מתרחשים בסין לעומת עשרה אחוזים בארצות הברית</div>
+            <div class="card-header">
+                4 טקסט: כשני שלישים מייצור הסוללות העולמי מתרחשים בסין לעומת עשרה אחוזים בארצות הברית.
+            </div>
 
 
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
                         <h1>mms</h1>
                         <p>
-                            <audio controls src="samples/mms/mms_10.wav">
+                            <audio controls src="samples/mms/5.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms5"
-                                   id="mms5_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="mms5_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms5"
-                                   id="mms5_5"
+                            <input class="form-check-input" type="radio" name="mms_5"
+                                   id="mms_5_5"
                                    value="5" required>
-                            <label class="form-check-label" for="mms5_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="mms_5_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms5"
-                                   id="mms5_4"
+                            <input class="form-check-input" type="radio" name="mms_5"
+                                   id="mms_5_4"
                                    value="4" required>
-                            <label class="form-check-label" for="mms5_4">4 (טוב)</label>
+                            <label class="form-check-label" for="mms_5_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms5"
-                                   id="mms5_3"
+                            <input class="form-check-input" type="radio" name="mms_5"
+                                   id="mms_5_3"
                                    value="3" required>
-                            <label class="form-check-label" for="mms5_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="mms_5_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms5"
-                                   id="mms5_2"
+                            <input class="form-check-input" type="radio" name="mms_5"
+                                   id="mms_5_2"
                                    value="2" required>
-                            <label class="form-check-label" for="mms5_2">2 (רע)</label>
+                            <label class="form-check-label" for="mms_5_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="mms5"
-                                   id="mms5_1"
+                            <input class="form-check-input" type="radio" name="mms_5"
+                                   id="mms_5_1"
                                    value="1" required>
-                            <label class="form-check-label" for="mms5_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="mms_5_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
-                        <h1>robo</h1>
+                        <h1>roboshaul</h1>
                         <p>
-                            <audio controls src="samples/roboshaul/robo_10.wav">
+                            <audio controls src="samples/roboshaul/5.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo5"
-                                   id="robo5_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="robo5_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo5"
-                                   id="robo5_5"
+                            <input class="form-check-input" type="radio" name="roboshaul_5"
+                                   id="roboshaul_5_5"
                                    value="5" required>
-                            <label class="form-check-label" for="robo5_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="roboshaul_5_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo5"
-                                   id="robo5_4"
+                            <input class="form-check-input" type="radio" name="roboshaul_5"
+                                   id="roboshaul_5_4"
                                    value="4" required>
-                            <label class="form-check-label" for="robo5_4">4 (טוב)</label>
+                            <label class="form-check-label" for="roboshaul_5_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo5"
-                                   id="robo5_3"
+                            <input class="form-check-input" type="radio" name="roboshaul_5"
+                                   id="roboshaul_5_3"
                                    value="3" required>
-                            <label class="form-check-label" for="robo5_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="roboshaul_5_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo5"
-                                   id="robo5_2"
+                            <input class="form-check-input" type="radio" name="roboshaul_5"
+                                   id="roboshaul_5_2"
                                    value="2" required>
-                            <label class="form-check-label" for="robo5_2">2 (רע)</label>
+                            <label class="form-check-label" for="roboshaul_5_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="robo5"
-                                   id="robo5_1"
+                            <input class="form-check-input" type="radio" name="roboshaul_5"
+                                   id="roboshaul_5_1"
                                    value="1" required>
-                            <label class="form-check-label" for="robo5_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="roboshaul_5_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
-                        <h1>valle robo</h1>
+                        <h1>word_osim</h1>
                         <p>
-                            <audio controls src="samples/word_roboshaul/roboshaul_roboshaul_top_50_temp_1_sample_9_2.wav">
+                            <audio controls src="samples/word_osim/5.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo5"
-                                   id="v-robo5_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="v-robo5_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo5"
-                                   id="v-robo5_5"
+                            <input class="form-check-input" type="radio" name="word_osim_5"
+                                   id="word_osim_5_5"
                                    value="5" required>
-                            <label class="form-check-label" for="v-robo5_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="word_osim_5_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo5"
-                                   id="v-robo5_4"
+                            <input class="form-check-input" type="radio" name="word_osim_5"
+                                   id="word_osim_5_4"
                                    value="4" required>
-                            <label class="form-check-label" for="v-robo5_4">4 (טוב)</label>
+                            <label class="form-check-label" for="word_osim_5_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo5"
-                                   id="v-robo5_3"
+                            <input class="form-check-input" type="radio" name="word_osim_5"
+                                   id="word_osim_5_3"
                                    value="3" required>
-                            <label class="form-check-label" for="v-robo5_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="word_osim_5_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo5"
-                                   id="v-robo5_2"
+                            <input class="form-check-input" type="radio" name="word_osim_5"
+                                   id="word_osim_5_2"
                                    value="2" required>
-                            <label class="form-check-label" for="v-robo5_2">2 (רע)</label>
+                            <label class="form-check-label" for="word_osim_5_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-robo5"
-                                   id="v-robo5_1"
+                            <input class="form-check-input" type="radio" name="word_osim_5"
+                                   id="word_osim_5_1"
                                    value="1" required>
-                            <label class="form-check-label" for="v-robo5_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="word_osim_5_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
                 <div class="card-body">
                     <div class="form-group">
-                        <h1>valle osim</h1>
+                        <h1>word_roboshaul</h1>
                         <p>
-                            <audio controls src="samples/word_osim/osim_osim_top_50_temp_1_sample_9_1.wav">
+                            <audio controls src="samples/word_roboshaul/5.wav">
                                 Your browser does not support the audio element.
                             </audio>
                         </p>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim5"
-                                   id="v-osim5_6"
-                                   value="6" required>
-                            <label class="form-check-label" for="v-osim5_6">6 (מצויין)</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim5"
-                                   id="v-osim5_5"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_5"
+                                   id="word_roboshaul_5_5"
                                    value="5" required>
-                            <label class="form-check-label" for="v-osim5_5">5 (טוב מאוד)</label>
+                            <label class="form-check-label" for="word_roboshaul_5_5">5 (מצויין)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim5"
-                                   id="v-osim5_4"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_5"
+                                   id="word_roboshaul_5_4"
                                    value="4" required>
-                            <label class="form-check-label" for="v-osim5_4">4 (טוב)</label>
+                            <label class="form-check-label" for="word_roboshaul_5_4">4 (טוב)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim5"
-                                   id="v-osim5_3"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_5"
+                                   id="word_roboshaul_5_3"
                                    value="3" required>
-                            <label class="form-check-label" for="v-osim5_3">3 (בינוני)</label>
+                            <label class="form-check-label" for="word_roboshaul_5_3">3 (בינוני)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim5"
-                                   id="v-osim5_2"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_5"
+                                   id="word_roboshaul_5_2"
                                    value="2" required>
-                            <label class="form-check-label" for="v-osim5_2">2 (רע)</label>
+                            <label class="form-check-label" for="word_roboshaul_5_2">2 (רע)</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="v-osim5"
-                                   id="v-osim5_1"
+                            <input class="form-check-input" type="radio" name="word_roboshaul_5"
+                                   id="word_roboshaul_5_1"
                                    value="1" required>
-                            <label class="form-check-label" for="v-osim5_1">1 (גרוע)</label>
+                            <label class="form-check-label" for="word_roboshaul_5_1">1 (גרוע)</label>
                         </div>
                     </div>
                 </div>
-
+            
 
 
         </div>
+    
+        <div class="card">
+            <div class="card-header">
+                5 טקסט: בראשית הייתה חללית מסוג נחתת.
+            </div>
 
+
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>mms</h1>
+                        <p>
+                            <audio controls src="samples/mms/6.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_6"
+                                   id="mms_6_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="mms_6_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_6"
+                                   id="mms_6_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="mms_6_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_6"
+                                   id="mms_6_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="mms_6_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_6"
+                                   id="mms_6_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="mms_6_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_6"
+                                   id="mms_6_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="mms_6_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/roboshaul/6.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_6"
+                                   id="roboshaul_6_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="roboshaul_6_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_6"
+                                   id="roboshaul_6_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="roboshaul_6_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_6"
+                                   id="roboshaul_6_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="roboshaul_6_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_6"
+                                   id="roboshaul_6_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="roboshaul_6_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_6"
+                                   id="roboshaul_6_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="roboshaul_6_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_osim</h1>
+                        <p>
+                            <audio controls src="samples/word_osim/6.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_6"
+                                   id="word_osim_6_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_osim_6_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_6"
+                                   id="word_osim_6_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_osim_6_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_6"
+                                   id="word_osim_6_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_osim_6_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_6"
+                                   id="word_osim_6_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_osim_6_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_6"
+                                   id="word_osim_6_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_osim_6_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/word_roboshaul/6.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_6"
+                                   id="word_roboshaul_6_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_roboshaul_6_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_6"
+                                   id="word_roboshaul_6_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_roboshaul_6_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_6"
+                                   id="word_roboshaul_6_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_roboshaul_6_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_6"
+                                   id="word_roboshaul_6_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_roboshaul_6_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_6"
+                                   id="word_roboshaul_6_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_roboshaul_6_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+
+        </div>
+    
+        <div class="card">
+            <div class="card-header">
+                6 טקסט: כבר שנים שאני מנסה למצוא מתכון אולטימטיבי.
+            </div>
+
+
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>mms</h1>
+                        <p>
+                            <audio controls src="samples/mms/7.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_7"
+                                   id="mms_7_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="mms_7_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_7"
+                                   id="mms_7_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="mms_7_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_7"
+                                   id="mms_7_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="mms_7_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_7"
+                                   id="mms_7_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="mms_7_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_7"
+                                   id="mms_7_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="mms_7_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/roboshaul/7.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_7"
+                                   id="roboshaul_7_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="roboshaul_7_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_7"
+                                   id="roboshaul_7_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="roboshaul_7_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_7"
+                                   id="roboshaul_7_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="roboshaul_7_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_7"
+                                   id="roboshaul_7_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="roboshaul_7_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_7"
+                                   id="roboshaul_7_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="roboshaul_7_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_osim</h1>
+                        <p>
+                            <audio controls src="samples/word_osim/7.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_7"
+                                   id="word_osim_7_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_osim_7_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_7"
+                                   id="word_osim_7_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_osim_7_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_7"
+                                   id="word_osim_7_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_osim_7_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_7"
+                                   id="word_osim_7_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_osim_7_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_7"
+                                   id="word_osim_7_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_osim_7_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/word_roboshaul/7.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_7"
+                                   id="word_roboshaul_7_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_roboshaul_7_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_7"
+                                   id="word_roboshaul_7_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_roboshaul_7_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_7"
+                                   id="word_roboshaul_7_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_roboshaul_7_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_7"
+                                   id="word_roboshaul_7_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_roboshaul_7_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_7"
+                                   id="word_roboshaul_7_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_roboshaul_7_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+
+        </div>
+    
+        <div class="card">
+            <div class="card-header">
+                7 טקסט: צמח הקפה הוא שיח ירוק שמקורו באתיופיה.
+            </div>
+
+
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>mms</h1>
+                        <p>
+                            <audio controls src="samples/mms/8.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_8"
+                                   id="mms_8_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="mms_8_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_8"
+                                   id="mms_8_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="mms_8_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_8"
+                                   id="mms_8_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="mms_8_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_8"
+                                   id="mms_8_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="mms_8_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_8"
+                                   id="mms_8_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="mms_8_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/roboshaul/8.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_8"
+                                   id="roboshaul_8_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="roboshaul_8_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_8"
+                                   id="roboshaul_8_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="roboshaul_8_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_8"
+                                   id="roboshaul_8_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="roboshaul_8_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_8"
+                                   id="roboshaul_8_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="roboshaul_8_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_8"
+                                   id="roboshaul_8_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="roboshaul_8_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_osim</h1>
+                        <p>
+                            <audio controls src="samples/word_osim/8.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_8"
+                                   id="word_osim_8_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_osim_8_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_8"
+                                   id="word_osim_8_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_osim_8_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_8"
+                                   id="word_osim_8_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_osim_8_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_8"
+                                   id="word_osim_8_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_osim_8_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_8"
+                                   id="word_osim_8_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_osim_8_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/word_roboshaul/8.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_8"
+                                   id="word_roboshaul_8_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_roboshaul_8_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_8"
+                                   id="word_roboshaul_8_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_roboshaul_8_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_8"
+                                   id="word_roboshaul_8_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_roboshaul_8_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_8"
+                                   id="word_roboshaul_8_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_roboshaul_8_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_8"
+                                   id="word_roboshaul_8_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_roboshaul_8_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+
+        </div>
+    
+        <div class="card">
+            <div class="card-header">
+                8 טקסט: בעקבות הגשמים מפלס הכנרת עלה.
+            </div>
+
+
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>mms</h1>
+                        <p>
+                            <audio controls src="samples/mms/9.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_9"
+                                   id="mms_9_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="mms_9_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_9"
+                                   id="mms_9_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="mms_9_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_9"
+                                   id="mms_9_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="mms_9_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_9"
+                                   id="mms_9_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="mms_9_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_9"
+                                   id="mms_9_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="mms_9_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/roboshaul/9.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_9"
+                                   id="roboshaul_9_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="roboshaul_9_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_9"
+                                   id="roboshaul_9_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="roboshaul_9_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_9"
+                                   id="roboshaul_9_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="roboshaul_9_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_9"
+                                   id="roboshaul_9_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="roboshaul_9_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_9"
+                                   id="roboshaul_9_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="roboshaul_9_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_osim</h1>
+                        <p>
+                            <audio controls src="samples/word_osim/9.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_9"
+                                   id="word_osim_9_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_osim_9_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_9"
+                                   id="word_osim_9_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_osim_9_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_9"
+                                   id="word_osim_9_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_osim_9_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_9"
+                                   id="word_osim_9_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_osim_9_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_9"
+                                   id="word_osim_9_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_osim_9_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/word_roboshaul/9.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_9"
+                                   id="word_roboshaul_9_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_roboshaul_9_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_9"
+                                   id="word_roboshaul_9_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_roboshaul_9_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_9"
+                                   id="word_roboshaul_9_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_roboshaul_9_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_9"
+                                   id="word_roboshaul_9_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_roboshaul_9_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_9"
+                                   id="word_roboshaul_9_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_roboshaul_9_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+
+        </div>
+    
+        <div class="card">
+            <div class="card-header">
+                9 טקסט: אין חדש תחת השמש.
+            </div>
+
+
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>mms</h1>
+                        <p>
+                            <audio controls src="samples/mms/10.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_10"
+                                   id="mms_10_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="mms_10_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_10"
+                                   id="mms_10_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="mms_10_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_10"
+                                   id="mms_10_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="mms_10_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_10"
+                                   id="mms_10_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="mms_10_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_10"
+                                   id="mms_10_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="mms_10_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/roboshaul/10.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_10"
+                                   id="roboshaul_10_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="roboshaul_10_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_10"
+                                   id="roboshaul_10_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="roboshaul_10_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_10"
+                                   id="roboshaul_10_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="roboshaul_10_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_10"
+                                   id="roboshaul_10_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="roboshaul_10_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_10"
+                                   id="roboshaul_10_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="roboshaul_10_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_osim</h1>
+                        <p>
+                            <audio controls src="samples/word_osim/10.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_10"
+                                   id="word_osim_10_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_osim_10_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_10"
+                                   id="word_osim_10_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_osim_10_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_10"
+                                   id="word_osim_10_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_osim_10_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_10"
+                                   id="word_osim_10_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_osim_10_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_10"
+                                   id="word_osim_10_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_osim_10_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/word_roboshaul/10.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_10"
+                                   id="word_roboshaul_10_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_roboshaul_10_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_10"
+                                   id="word_roboshaul_10_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_roboshaul_10_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_10"
+                                   id="word_roboshaul_10_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_roboshaul_10_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_10"
+                                   id="word_roboshaul_10_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_roboshaul_10_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_10"
+                                   id="word_roboshaul_10_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_roboshaul_10_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+
+        </div>
+    
+        <div class="card">
+            <div class="card-header">
+                10 טקסט: לאן הברווזים עפים כשהאגם קפוא.
+            </div>
+
+
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>mms</h1>
+                        <p>
+                            <audio controls src="samples/mms/11.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_11"
+                                   id="mms_11_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="mms_11_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_11"
+                                   id="mms_11_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="mms_11_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_11"
+                                   id="mms_11_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="mms_11_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_11"
+                                   id="mms_11_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="mms_11_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_11"
+                                   id="mms_11_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="mms_11_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/roboshaul/11.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_11"
+                                   id="roboshaul_11_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="roboshaul_11_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_11"
+                                   id="roboshaul_11_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="roboshaul_11_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_11"
+                                   id="roboshaul_11_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="roboshaul_11_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_11"
+                                   id="roboshaul_11_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="roboshaul_11_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_11"
+                                   id="roboshaul_11_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="roboshaul_11_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_osim</h1>
+                        <p>
+                            <audio controls src="samples/word_osim/11.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_11"
+                                   id="word_osim_11_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_osim_11_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_11"
+                                   id="word_osim_11_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_osim_11_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_11"
+                                   id="word_osim_11_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_osim_11_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_11"
+                                   id="word_osim_11_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_osim_11_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_11"
+                                   id="word_osim_11_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_osim_11_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/word_roboshaul/11.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_11"
+                                   id="word_roboshaul_11_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_roboshaul_11_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_11"
+                                   id="word_roboshaul_11_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_roboshaul_11_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_11"
+                                   id="word_roboshaul_11_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_roboshaul_11_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_11"
+                                   id="word_roboshaul_11_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_roboshaul_11_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_11"
+                                   id="word_roboshaul_11_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_roboshaul_11_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+
+        </div>
+    
+        <div class="card">
+            <div class="card-header">
+                11 טקסט: נגינת פסנתר דורשת מיומנויות גבוהות.
+            </div>
+
+
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>mms</h1>
+                        <p>
+                            <audio controls src="samples/mms/12.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_12"
+                                   id="mms_12_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="mms_12_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_12"
+                                   id="mms_12_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="mms_12_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_12"
+                                   id="mms_12_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="mms_12_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_12"
+                                   id="mms_12_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="mms_12_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_12"
+                                   id="mms_12_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="mms_12_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/roboshaul/12.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_12"
+                                   id="roboshaul_12_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="roboshaul_12_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_12"
+                                   id="roboshaul_12_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="roboshaul_12_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_12"
+                                   id="roboshaul_12_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="roboshaul_12_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_12"
+                                   id="roboshaul_12_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="roboshaul_12_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_12"
+                                   id="roboshaul_12_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="roboshaul_12_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_osim</h1>
+                        <p>
+                            <audio controls src="samples/word_osim/12.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_12"
+                                   id="word_osim_12_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_osim_12_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_12"
+                                   id="word_osim_12_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_osim_12_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_12"
+                                   id="word_osim_12_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_osim_12_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_12"
+                                   id="word_osim_12_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_osim_12_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_12"
+                                   id="word_osim_12_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_osim_12_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/word_roboshaul/12.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_12"
+                                   id="word_roboshaul_12_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_roboshaul_12_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_12"
+                                   id="word_roboshaul_12_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_roboshaul_12_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_12"
+                                   id="word_roboshaul_12_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_roboshaul_12_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_12"
+                                   id="word_roboshaul_12_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_roboshaul_12_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_12"
+                                   id="word_roboshaul_12_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_roboshaul_12_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+
+        </div>
+    
+        <div class="card">
+            <div class="card-header">
+                12 טקסט: מתי בפעם האחרונה יצא לכם לאכול גלידה.
+            </div>
+
+
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>mms</h1>
+                        <p>
+                            <audio controls src="samples/mms/13.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_13"
+                                   id="mms_13_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="mms_13_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_13"
+                                   id="mms_13_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="mms_13_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_13"
+                                   id="mms_13_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="mms_13_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_13"
+                                   id="mms_13_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="mms_13_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_13"
+                                   id="mms_13_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="mms_13_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/roboshaul/13.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_13"
+                                   id="roboshaul_13_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="roboshaul_13_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_13"
+                                   id="roboshaul_13_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="roboshaul_13_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_13"
+                                   id="roboshaul_13_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="roboshaul_13_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_13"
+                                   id="roboshaul_13_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="roboshaul_13_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_13"
+                                   id="roboshaul_13_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="roboshaul_13_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_osim</h1>
+                        <p>
+                            <audio controls src="samples/word_osim/13.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_13"
+                                   id="word_osim_13_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_osim_13_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_13"
+                                   id="word_osim_13_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_osim_13_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_13"
+                                   id="word_osim_13_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_osim_13_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_13"
+                                   id="word_osim_13_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_osim_13_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_13"
+                                   id="word_osim_13_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_osim_13_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/word_roboshaul/13.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_13"
+                                   id="word_roboshaul_13_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_roboshaul_13_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_13"
+                                   id="word_roboshaul_13_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_roboshaul_13_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_13"
+                                   id="word_roboshaul_13_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_roboshaul_13_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_13"
+                                   id="word_roboshaul_13_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_roboshaul_13_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_13"
+                                   id="word_roboshaul_13_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_roboshaul_13_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+
+        </div>
+    
+        <div class="card">
+            <div class="card-header">
+                13 טקסט: אני מאוד ממליץ לטייל בגולן באביב, בזמן הפריחה.
+            </div>
+
+
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>mms</h1>
+                        <p>
+                            <audio controls src="samples/mms/14.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_14"
+                                   id="mms_14_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="mms_14_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_14"
+                                   id="mms_14_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="mms_14_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_14"
+                                   id="mms_14_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="mms_14_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_14"
+                                   id="mms_14_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="mms_14_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_14"
+                                   id="mms_14_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="mms_14_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/roboshaul/14.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_14"
+                                   id="roboshaul_14_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="roboshaul_14_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_14"
+                                   id="roboshaul_14_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="roboshaul_14_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_14"
+                                   id="roboshaul_14_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="roboshaul_14_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_14"
+                                   id="roboshaul_14_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="roboshaul_14_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_14"
+                                   id="roboshaul_14_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="roboshaul_14_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_osim</h1>
+                        <p>
+                            <audio controls src="samples/word_osim/14.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_14"
+                                   id="word_osim_14_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_osim_14_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_14"
+                                   id="word_osim_14_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_osim_14_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_14"
+                                   id="word_osim_14_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_osim_14_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_14"
+                                   id="word_osim_14_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_osim_14_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_14"
+                                   id="word_osim_14_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_osim_14_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/word_roboshaul/14.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_14"
+                                   id="word_roboshaul_14_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_roboshaul_14_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_14"
+                                   id="word_roboshaul_14_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_roboshaul_14_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_14"
+                                   id="word_roboshaul_14_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_roboshaul_14_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_14"
+                                   id="word_roboshaul_14_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_roboshaul_14_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_14"
+                                   id="word_roboshaul_14_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_roboshaul_14_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+
+        </div>
+    
+        <div class="card">
+            <div class="card-header">
+                14 טקסט: הרכבות ביפן יכולות להגיע למהירות אדירה.
+            </div>
+
+
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>mms</h1>
+                        <p>
+                            <audio controls src="samples/mms/15.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_15"
+                                   id="mms_15_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="mms_15_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_15"
+                                   id="mms_15_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="mms_15_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_15"
+                                   id="mms_15_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="mms_15_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_15"
+                                   id="mms_15_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="mms_15_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="mms_15"
+                                   id="mms_15_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="mms_15_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/roboshaul/15.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_15"
+                                   id="roboshaul_15_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="roboshaul_15_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_15"
+                                   id="roboshaul_15_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="roboshaul_15_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_15"
+                                   id="roboshaul_15_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="roboshaul_15_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_15"
+                                   id="roboshaul_15_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="roboshaul_15_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="roboshaul_15"
+                                   id="roboshaul_15_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="roboshaul_15_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_osim</h1>
+                        <p>
+                            <audio controls src="samples/word_osim/15.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_15"
+                                   id="word_osim_15_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_osim_15_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_15"
+                                   id="word_osim_15_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_osim_15_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_15"
+                                   id="word_osim_15_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_osim_15_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_15"
+                                   id="word_osim_15_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_osim_15_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_osim_15"
+                                   id="word_osim_15_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_osim_15_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="card-body">
+                    <div class="form-group">
+                        <h1>word_roboshaul</h1>
+                        <p>
+                            <audio controls src="samples/word_roboshaul/15.wav">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_15"
+                                   id="word_roboshaul_15_5"
+                                   value="5" required>
+                            <label class="form-check-label" for="word_roboshaul_15_5">5 (מצויין)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_15"
+                                   id="word_roboshaul_15_4"
+                                   value="4" required>
+                            <label class="form-check-label" for="word_roboshaul_15_4">4 (טוב)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_15"
+                                   id="word_roboshaul_15_3"
+                                   value="3" required>
+                            <label class="form-check-label" for="word_roboshaul_15_3">3 (בינוני)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_15"
+                                   id="word_roboshaul_15_2"
+                                   value="2" required>
+                            <label class="form-check-label" for="word_roboshaul_15_2">2 (רע)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="word_roboshaul_15"
+                                   id="word_roboshaul_15_1"
+                                   value="1" required>
+                            <label class="form-check-label" for="word_roboshaul_15_1">1 (גרוע)</label>
+                        </div>
+                    </div>
+                </div>
+            
+
+
+        </div>
+    
 
             </div>
             <input type="text" name="formid" value="1" hidden>
@@ -1081,11 +2762,11 @@
                 <small>אם לא עבר מסך אחרי כמה שניות כנראה שדילגת בטעות על דוגמא. צריך למלא ציונים לכל הדוגמאות.</small>
             </p>
         </form>
-        <!-- <button class="btn btn-lg btn-info" onclick="shuffleForm();">ערבל את הסדר</button> -->
+
     </div>
 
     <div class="container" style="padding-top: 60px;">
-        <p class="text-center text-muted">&copy; רובו-שאול</p>
+        <p class="text-center text-muted">&copy;האוניברסיטה העברית</p>
     </div>
 
     <script type="text/javascript">
@@ -1108,6 +2789,7 @@
             let formArray = Array.from(formItems);
             formArray.forEach((e) => e.remove());
             shuffle(formArray);
+            formArray = formArray.slice(0,4)
             let questions = document.getElementById("questions");
             formArray.forEach((e) => questions.appendChild(e));
         }
