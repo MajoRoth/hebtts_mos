@@ -46,9 +46,49 @@ def main():
         } for d in directories for i, s in enumerate(samples_json)
     ]
 
+    # additional samples
+    questions += [
+        {
+            'dir': 'additional',
+            'prompt': "תגידו גנבו לכם פעם את האוטו ופשוט ידעתם שאין טעם להגיש תלונה במשטרה?",
+            'title': f"word_osim_add_1",
+            'audio_path': f"samples/word_osim/2.wav",
+            'name': f"word_osim_additional_1"
+        },
+        {
+            'dir': 'additional',
+            'prompt': "בראשית היתה חללית מסוג נחתת",
+            'title': f"word_osim_add_2",
+            'audio_path': f"samples/word_osim/6.wav",
+            'name': f"word_osim_additional_2"
+        },
+        {
+            'dir': 'additional',
+            'prompt': "הדרבי תמיד היה המשחק הכי חשוב, אך בשני האחרונות הוא נעשה כמעט הדבר היחיד שחשוב",
+            'title': f"word_osim_add_3",
+            'audio_path': f"samples/word_osim/4.wav",
+            'name': f"word_osim_additional_3"
+        },
+        {
+            'dir': 'additional',
+            'prompt': "ובשביל להבין למה מחיר הדלק כל כך עלה, צריך לחזור שנתיים אחרונית",
+            'title': f"word_osim_add_4",
+            'audio_path': f"samples/word_osim/1.wav",
+            'name': f"word_osim_additional_4"
+        },
+
+        {
+            'dir': 'additional',
+            'prompt': "מה שבהגדרה משאיר את הכלכלה ההונגרית מאחור, אפילו ביחס למדינות כמו פולין",
+            'title': f"word_shaul_add_1",
+            'audio_path': f"samples/word_roboshaul/3.wav",
+            'name': f"word_shaul_additional_1"
+        },
+    ]
+
     html = template.render(
         page_title="MOS",
-        form_url="https://script.google.com/macros/s/AKfycbyUQOOuz31ueOC8q5CFJE5sTmFjVKc1yB7pSaoTJtaKJ07BeQxojBCYFT9J02KcSw89OA/exec",
+        form_url="https://script.google.com/macros/s/AKfycbybOLJ5rGWHwhLSF21H4E1KRHKQJ5R1yo3XSdnWhqhCnvPgKdLBHr5zeNifqtkhb2Nwtg/exec",
         form_id=1,
         questions=questions
     )
