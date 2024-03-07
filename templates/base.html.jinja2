@@ -58,24 +58,24 @@
             return true;
         };
 
-        function shuffle(a) {
-            for (let i = a.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [a[i], a[j]] = [a[j], a[i]];
-            }
-            return a;
-        }
-
-        function shuffleForm() {
-            let formItems = document.getElementsByClassName("card");
-            let formArray = Array.from(formItems);
-            formArray.forEach((e) => e.remove());
-            shuffle(formArray);
-            formArray = formArray.slice(0,4)
-            let questions = document.getElementById("questions");
-            formArray.forEach((e) => questions.appendChild(e));
-        }
-        window.addEventListener('DOMContentLoaded', (e) => shuffleForm());
+        {#function shuffle(a) {#}
+        {#    for (let i = a.length - 1; i > 0; i--) {#}
+        {#        const j = Math.floor(Math.random() * (i + 1));#}
+        {#        [a[i], a[j]] = [a[j], a[i]];#}
+        {#    }#}
+        {#    return a;#}
+        {#}#}
+        {##}
+        {#function shuffleForm() {#}
+        {#    let formItems = document.getElementsByClassName("card");#}
+        {#    let formArray = Array.from(formItems);#}
+        {#    formArray.forEach((e) => e.remove());#}
+        {#    shuffle(formArray);#}
+        {#    formArray = formArray.slice(0,20)#}
+        {#    let questions = document.getElementById("questions");#}
+        {#    formArray.forEach((e) => questions.appendChild(e));#}
+        {#}#}
+        {#window.addEventListener('DOMContentLoaded', (e) => shuffleForm());#}
     </script>
 </body>
 
